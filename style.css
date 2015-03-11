@@ -1,0 +1,169 @@
+	
+
+	
+	body{
+	background-image: url(img/background.jpg); background-attachment:fixed;
+	}
+	
+	h2{
+	
+	}
+	
+	h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+	
+	#nav{
+		float: left;
+		width: 250px;
+		color: white;
+	}
+	
+	.form-group{
+	color: white;
+	padding: 10px;
+	}
+	
+		
+	#container{
+		color: white;
+		width: 1000px;
+		margin-left: auto;
+		margin-right: auto;
+	}	
+	
+	#formularz{
+		float: left;
+		width: 700px;
+	}
+	
+	#banki{
+		width: 300px;
+		float: left;
+	
+	}
+	
+	#koncowy_guzior{
+		clear: both;
+	}
+	
+	#myModal{
+	color: black;
+	}
+	
+	#zapamietajMnie{
+		float: left;
+		color: white;
+	}
+	
+	#przyciskZaloguj{
+		float: left;
+	}
+	
+	#przyciski{
+		padding-left:70px;
+		padding-top:10px;
+		clear: both;
+	}
+	
+	#carousel{
+		padding-top: 10px;
+		float: left;
+		width: 750px;
+	}
+	
+	#contentSklep{
+		float: left;
+		width: 750px;
+		color: white;
+	}
+	
+	#contentKoszyk{
+		float: left;
+		width: 750px;
+		color: white;
+	}
+	
+	#produkty{
+	color: black;
+	}
+	
+	#listing{
+	color: white;
+	}
+	
+	#contentOpis{
+		float: left;
+		width: 750px;
+		color: white;
+	}
+	
+	#footer{
+		margin-top: 500px;
+		clear: both;
+		height: 100px;
+		color: white;
+	}
+	
+.footer-top {
+    background: #323B44;
+	border-bottom: 1px solid #414f5a;
+   	color: #A1A1A1;
+    padding: 10px 0;
+		     }
+.footer-bottom {
+    background: #25292C;
+    color: #888;
+    line-height: 30px;
+    padding: 15px;
+}
+
+
+.social-icons-footer-bottom li {
+    display: inline;
+    float: left;
+    margin-right: 7px !important;
+    }
+	
+
+	
+#sty
+{
+	width:750px;
+	}
+#fileid
+{
+	width:85px;
+	height:20px;
+	}
+#nameid
+{
+	font-size:18px;
+	color:#06F;
+	margin-bottom:5px;
+}
+
+#one
+{
+	font-size:18px;
+	font-family:"Times New Roman", Times, serif;
+color:#06F;
+}
+
+textarea {
+    width: 150px;
+    max-width: 150px;
+	height: 300px;
+	max-height: 300px;
+
+}
+
+
+
+	
