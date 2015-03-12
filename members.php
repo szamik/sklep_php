@@ -97,7 +97,7 @@ header("Location: emptyFields.html");
 		<div id="carousel" class="carousel slide" data-ride="carousel">
 			<center>
 			<marquee>
-			<font size="6" color="white" face="High Tower Text">Aktualne hity do wypozyczenia w naszym sklapie</font>
+			<font size="6" color="white" face="High Tower Text">Aktualne hity do wypozyczenia w naszym sklepie</font>
 			</center>
 			</marquee>
 			<ol class="carousel-indicators">
