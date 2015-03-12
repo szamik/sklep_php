@@ -1,10 +1,8 @@
 <?php 
-
- mysql_connect("sbazy.uek.krakow.pl", "s176937", "09091986") or die(mysql_error()); 
- mysql_select_db("s176937") or die(mysql_error()); 
- //This code runs if the form has been submitted
+ include("config.php");
+ 
  if (isset($_POST['submit'])) { 
- //This makes sure they did not leave any fields blank
+
  if (!$_POST['username'] | !$_POST['pass'] | !$_POST['pass2'] ) {
  		die('You did not complete all of the required fields');
  	}
@@ -27,13 +25,13 @@ or die(mysql_error());
 		header("Location: passNotMatch.html");
 
  	}
- 	
+
  	$_POST['pass'] = md5($_POST['pass']);
  	if (!get_magic_quotes_gpc()) {
  		$_POST['pass'] = addslashes($_POST['pass']);
  		$_POST['username'] = addslashes($_POST['username']);
  			}
- 
+
  	$insert = "INSERT INTO users (username, password)
  			VALUES ('".$_POST['username']."', '".$_POST['pass']."')";
  	$add_member = mysql_query($insert);
@@ -268,8 +266,7 @@ or die(mysql_error());
                                       </div>
                </div>
             </div>
-            <!-- Footer Top End --> 
-            <!-- Footer Bottom Start -->
+
             <div class="footer-bottom">
                <div class="container">
                   <div class="row">
@@ -277,7 +274,7 @@ or die(mysql_error());
                                        </div>
                </div>
             </div>
-            <!-- Footer Bottom End --> 
+
          </footer>
 
 		
