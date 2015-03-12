@@ -1,7 +1,5 @@
 <?php 
- 
- mysql_connect("sbazy.uek.krakow.pl", "s176937", "09091986") or die(mysql_error()); 
- mysql_select_db("s176937") or die(mysql_error()); 
+ include("config.php");
 
  if(isset($_COOKIE['ID_my_site']))
 
@@ -21,7 +19,7 @@
  		}
  }
 
- if (isset($_POST['submit'])) { 
+ if (isset($_POST['submit'])) {
 
  	if(!$_POST['username'] | !$_POST['pass']) {
 
@@ -320,10 +318,6 @@ else
             <!-- Footer Bottom End --> 
          </footer>
 
-
-
-
-			
 
 
 	<!-- JavaScript plugins (requires jQuery) -->
