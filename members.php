@@ -35,11 +35,8 @@ header("Location: emptyFields.html");
 
 <div align ="center" style="color:#FFFFFF ; font-size:16px ; font-weight:bold">
 <?php 
+include("config.php");
 
- mysql_connect("sbazy.uek.krakow.pl", "s176937", "09091986") or die(mysql_error()); 
- mysql_select_db("s176937") or die(mysql_error()); 
- 
- 
  if(isset($_COOKIE['ID_my_site'])) 
  { 
  	$username = $_COOKIE['ID_my_site']; 
@@ -47,13 +44,10 @@ header("Location: emptyFields.html");
  	 	$check = mysql_query("SELECT * FROM users WHERE username = '$username'")or die(mysql_error()); 
  	while($info = mysql_fetch_array( $check )) 	 
  		{ 
- 
 
  		if ($pass != $info['password']) 
  			{ 			header("Location: index.php"); 
  			} 
- 
-	 
  	else 
  			{ 
 	echo "<br>";
@@ -74,7 +68,6 @@ header("Location: emptyFields.html");
  		} 
  		} 
  else 
- 
  
  {			 
  header("Location: index.php"); 
@@ -97,7 +90,7 @@ header("Location: emptyFields.html");
 		<div id="carousel" class="carousel slide" data-ride="carousel">
 			<center>
 			<marquee>
-			<font size="6" color="white" face="High Tower Text">Aktualne hity do wypozyczenia w naszym sklepie</font>
+			<font size="6" color="white" face="High Tower Text">Aktualne hity do wypozyczenia w naszym sklapie</font>
 			</center>
 			</marquee>
 			<ol class="carousel-indicators">
@@ -242,8 +235,7 @@ header("Location: emptyFields.html");
                                       </div>
                </div>
             </div>
-            <!-- Footer Top End --> 
-            <!-- Footer Bottom Start -->
+
             <div class="footer-bottom">
                <div class="container">
                   <div class="row">
@@ -251,7 +243,6 @@ header("Location: emptyFields.html");
                                        </div>
                </div>
             </div>
-            <!-- Footer Bottom End --> 
          </footer>
 
 
